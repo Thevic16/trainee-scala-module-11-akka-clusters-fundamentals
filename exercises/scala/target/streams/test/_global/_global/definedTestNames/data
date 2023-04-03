@@ -1,0 +1,1 @@
+["com.reactivebbq.loyalty.LoyaltyInformationTest","com.reactivebbq.loyalty.LoyaltyActorSupervisorTest","com.reactivebbq.loyalty.FileBasedLoyaltyRepositoryTest","com.reactivebbq.loyalty.LoyaltyRoutesTest","com.reactivebbq.loyalty.InMemoryLoyaltyRepositoryTest","com.reactivebbq.loyalty.LoyaltyActorTest"]

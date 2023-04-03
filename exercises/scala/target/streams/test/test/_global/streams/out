@@ -1,0 +1,76 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector(-javaagent:/home/victor/.cache/coursier/v1/https/repo.lightbend.com/pass/bCLKD6MRD_LhU3TruDIWNGlvOuxrk7y8PvMVOrHWxxwbM6j2/commercial-releases/com/lightbend/cinnamon/cinnamon-agent/2.15.0/cinnamon-agent-2.15.0.jar)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 6 initial tasks for 6 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.LoyaltyInformationTest, sbt.ForkMain$SubclassFingerscan@75226979, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLoyaltyInformationTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcurrentTotal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return zero if there are no transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the value of an award if it is the only transaction[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a negative value of a deduct if it is the only transaction[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the combined value of all transactions[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mapplyAdjustment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Add the adjustment to the list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Apply multiple adjustments[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 6 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.LoyaltyActorSupervisorTest, sbt.ForkMain$SubclassFingerscan@547eb853, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLoyaltyActorSupervisorTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDeliver[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create an actor and send it the command[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reuse existing actors[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.FileBasedLoyaltyRepositoryTest, sbt.ForkMain$SubclassFingerscan@31b66ad7, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFileBasedLoyaltyRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfindLoyalty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return nothing if the id does not exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the loyalty if it exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct loyalty if multiples exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdateLoyalty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite an existing value[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.LoyaltyRoutesTest, sbt.ForkMain$SubclassFingerscan@77ef006d, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLoyaltyRoutesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m/loyalty/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return the results from the supervisor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m/loyalty/{id}/award/{points}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Indicate the adjustment was applied if it succeeds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Indicate the adjustment was not applied if it failed.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m/loyalty/{id}/deduct/{points}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Indicate the adjustment was applied if it succeeds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Indicate the adjustment was rejected if it fails.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.InMemoryLoyaltyRepositoryTest, sbt.ForkMain$SubclassFingerscan@17650adf, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInMemoryLoyaltyRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfindLoyalty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return nothing if the id does not exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the loyalty if it exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct loyalty if multiples exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdateLoyalty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite an existing value[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 4 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.loyalty.LoyaltyActorTest, sbt.ForkMain$SubclassFingerscan@2bbbb038, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLoyaltyActorTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe Actor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Load it's state from the repo on startup[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mApplyLoyaltyAdjustment[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Return a corresponding event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Apply all Loyalty Adjustments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Update the Loyalty Repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Fail to deduct if there is insufficient points[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Fail if it can't write to the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGetLoyaltyInformation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return empty LoyaltyInformation if no adjustments have been applied[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the updated LoyaltyInformation if an adjustment has been applied[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 6 seconds, 472 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 29[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 29, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.LoyaltyInformationTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.LoyaltyActorSupervisorTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.FileBasedLoyaltyRepositoryTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.LoyaltyRoutesTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.InMemoryLoyaltyRepositoryTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.loyalty.LoyaltyActorTest[0m

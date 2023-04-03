@@ -1,0 +1,8 @@
+#Successful Tests
+#Mon Jan 30 11:39:47 AST 2023
+com.reactivebbq.loyalty.LoyaltyActorTest=1675093186971
+com.reactivebbq.loyalty.FileBasedLoyaltyRepositoryTest=1675093185942
+com.reactivebbq.loyalty.InMemoryLoyaltyRepositoryTest=1675093186769
+com.reactivebbq.loyalty.LoyaltyRoutesTest=1675093186749
+com.reactivebbq.loyalty.LoyaltyActorSupervisorTest=1675093185871
+com.reactivebbq.loyalty.LoyaltyInformationTest=1675093182671
